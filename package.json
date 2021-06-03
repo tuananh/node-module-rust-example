@@ -1,0 +1,25 @@
+{
+  "name": "node-module-rust-example",
+  "version": "1.0.0",
+  "description": "An example of writing node module with Rust",
+  "repository": "https://github.com/tuananh/node-module-rust-example",
+  "main": "index.js",
+  "napi": {
+    "name": "node-module-rust-example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "napi build --platform",
+    "build-release": "napi build --platform --release"
+  },
+  "files": [
+    "index.js",
+    "*.node"
+  ],
+  "author": "Tuan Anh Tran <me@tuananh.org>",
+  "license": "MIT",
+  "dependencies": {
+    "@napi-rs/cli": "^1.0.4",
+    "detect-libc": "^1.0.3"
+  }
+}
